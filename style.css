@@ -4,6 +4,7 @@ body,
     padding: 0;
     margin: 0;
     font-family: Helvetica, sans-serif;
+    font-size: 1rem;
 }
 
 .container {
@@ -30,7 +31,19 @@ body,
     background-color: rgb(74, 129, 192);
     display: grid;
     align-content: start;
+    font-size: 1.2em;
+    color:white;
+    padding: 20px;
+    gap: 50px;
+}
+
+.dashboard,
+.home,
+.setting {
+    display: grid;
+    grid-template-columns: auto auto;
     gap: 20px;
+    justify-content: start;
 }
 
 .header {
@@ -38,21 +51,43 @@ body,
     grid-template-columns: auto 1fr auto auto auto;
     grid-auto-flow: column;
     gap: 20px;
+    align-items: center;
 }
 
 .header input {
     width: 100%;
+    border-radius: ;
+}
+
+.header img {
+    height: 2em;
+    border-radius: 50%;
 }
 
 .nav {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-auto-flow: column;
-    gap: 10px
+    gap: 10px;
+    align-items: center;
+}
+
+.nav img {
+    height: 4em;
+    border-radius: 50%;
 }
 
 .nav button {
     margin: 0 10px;
+}
+
+.greeting > div:first-child {
+    font-size: .7em;
+}
+
+.greeting > div:last-child {
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
 .content {
@@ -67,10 +102,22 @@ body,
     grid-row: 1 / 3;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.article {
+    background-color: rgb(250, 250, 250);
+    display: grid;
+    align-content: space-between;
+    padding: 10px;
+}
+
+.articleButtons {
+    justify-self: end;
 }
 
 .announcement {
-    background-color: aliceblue;
+    background-color: rgb(211, 211, 211);
     display: grid;
     gap: 20px;
     padding: 20px;
@@ -78,7 +125,7 @@ body,
 }
 
 .trending {
-    background-color: aliceblue;
+    background-color: rgb(240, 240, 240);
     display: grid;
     gap: 20px;
     padding: 20px;
