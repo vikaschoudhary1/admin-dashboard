@@ -7,6 +7,11 @@ body,
     font-size: 1rem;
 }
 
+button:active {
+    border-radius: 25%;
+    box-shadow: inset 2px 4px 4px 1px #c3c3c3;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -44,6 +49,16 @@ body,
     grid-template-columns: auto auto;
     gap: 20px;
     justify-content: start;
+    align-items: center;
+}
+
+.dashboard {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.dashboard img {
+    height: 1.5em;
 }
 
 .header {
@@ -52,6 +67,7 @@ body,
     grid-auto-flow: column;
     gap: 20px;
     align-items: center;
+    font-weight: bold;
 }
 
 .header input {
@@ -96,6 +112,7 @@ body,
     background-color: rgb(228, 228, 228);
     gap: 20px;
     font-size: .9em;
+    box-shadow: inset 1px 1px 5px 1px #cbcbcb;
 }
 
 .projects {
@@ -106,28 +123,51 @@ body,
 }
 
 .article {
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(255, 255, 255);
     display: grid;
     align-content: space-between;
     padding: 10px;
+    border-radius: .5em;
+    box-shadow: 1px 1px 3px 0px #b5b5b582;
+}
+
+.articleHeading,
+.announcementHeading {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0 0 5px 0;
 }
 
 .articleButtons {
     justify-self: end;
 }
 
+.articleButtons > button {
+    border: none;
+    padding: 0 5px;
+    background-color: transparent;
+}
+
+.articleButtons  img {
+    height: 1.5em;
+}
+
 .announcement {
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(255, 255, 255);
     display: grid;
     gap: 20px;
     padding: 20px;
     font-size: .8em;
+    border-radius: 1em;
+    box-shadow: 1px 1px 3px 0px #b5b5b582;
 }
 
 .trending {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(255, 255, 255);
     display: grid;
     gap: 20px;
     padding: 20px;
     font-size: .8em;
+    border-radius: 1em;
+    box-shadow: 1px 1px 3px 0px #b5b5b582;
 }
